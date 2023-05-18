@@ -17,3 +17,13 @@ function diasFaltantes(){
     falta = (falta / 3600000) / 24; 
     document.getElementById("ejercicio3").innerHTML = Math.floor(falta);
 }
+function convertirUrl(){
+    var url = document.getElementById("formulario2").value;
+    const patronMeet = new RegExp('^https?:\\/\\/meet\\.google\\.com\\/\\S+$');
+    if(patronMeet.test(url)){
+        const inicioUrl = url.indexOf("https://meet.google.com/") + "https://meet.google.com/".length;
+        var codigo= url.slice(inicioUrl).replace(/-/g, "");
+        document.getElementById("ejercicio4").innerHTML = codigo;
+    } else
+        document.getElementById("ejercicio4").textContent = "Url no valida";
+}
