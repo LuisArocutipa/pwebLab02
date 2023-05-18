@@ -10,3 +10,10 @@ function invertir(){
         inversa += palabra.charAt(i);
     document.getElementById("ejercicio2").innerHTML = inversa; 
 }
+function diasFaltantes(){
+    const hoy = new Date().getTime();
+    const arequipa = new Date("August 15 2023 00:00:00").getTime();
+    var falta = arequipa - hoy;
+    falta = (falta / 3600000) / 24; 
+    document.getElementById("ejercicio3").innerHTML = Math.floor(falta);
+}
