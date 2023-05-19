@@ -27,3 +27,36 @@ function convertirUrl(){
     } else
         document.getElementById("ejercicio4").textContent = "Url no valida";
 }
+function crearTabla(){
+    var numero = document.getElementById("formulario3").value;
+    var contenedor = document.getElementById("contenedor");
+    var tabla = document.createElement("table");
+    for (var i = 0; i <= numero; i++) {
+      var fila = document.createElement("td");
+      fila.textContent = i;
+      tabla.appendChild(fila);
+    }
+    contenedor.appendChild(tabla);
+
+}
+function calcularSuma(){
+    var numero = document.getElementById("formulario3").value;
+    var contenedor2 = document.getElementById("contenedor2");
+    var tabla = document.createElement("table");
+    for (var i = 0; i <= numero; i++) {
+      var fila = document.createElement("tr");
+      for (var j = 0; j <= numero; j++) {
+          var celda = document.createElement("td");
+          if (i==0)
+              celda.textContent = j;
+          else 
+              if (j==0)
+                  celda.textContent = i;
+              else
+                  celda.textContent = i + j;
+          tabla.appendChild(celda);
+      }
+      tabla.appendChild(fila);
+    }
+    contenedor2.appendChild(tabla);
+}
