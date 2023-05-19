@@ -62,9 +62,23 @@
 - Para la resolución del segundo laboratorio se creó el siguiente repositoiro en GitHub, en el que subió los archivos index.html y Ejercicios.js:
 https://github.com/LuisArocutipa/pwebLab02
 - En el primer ejercicio nos piden que mostremos el día que es cuando ejecutemos el archivo. Para resolver este primer ejercicio se creó un array que contiene el nombre de todos los dias empezando con domingo. Luego, atraves del objeto "new Date()" (función que nos da la fecha actual) obtenemos el número de día que es mediante el método "getDay()" y lo almacenamos en una constante. Finalmente mostramos el nombre del día que es reemplazando el número de la constante con una posición en el array.
+
+<img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2ej1.PNG?raw=true" alt="ej1" style="width:100%; height:auto"/>
+
 - El segundo ejercicio nos pide que mostremos la inversa de un texto que se introduzca en un formulario. Primero, se creó un formulario, en el cual se introduzca el texto que va a invertir posteriormente, junto con un botón que llama a una función que esta en el archivo de javascript. Despues, se crea una función en la cual se almacena el valor que se haya escrito en el formulario y mediante un ciclo for vamos recorriendo cada letra del texto, empezando desde el final de la cadena de texto, y concatenando a una variable de modo que se vaya guardando cada letra del texto de manera invertida. Finalmente, mostramos el resultado en el archivo index.html.
+
+<img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2ej2.PNG?raw=true" alt="ej1" style="width:70%; height:auto"/><img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2im2.PNG?raw=true" alt="ej1" style="width:30%; height:auto"/>
+
 - El tercer ejercicio nos pide mostrar cuantos dias faltan para el aniversario de Arequipa. Empezamos obteniendo la fecha en la que se ejecuta el archivo mediante el objeto new Date(). Despues, obtenemos el tiempo que hay entre la fecha actual y el 15 de agosto, atraves del método getTime() y restando los tiempos que obtenemos con la función entre las dos fechas. Finalmente, transfomamos ese tiempo a dias y los mostramos en el archivo html.
+
+<img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2ej3.PNG?raw=true" alt="ej1" style="width:80%; height:auto"/><img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2im3.PNG?raw=true" alt="ej1" style="width:40%; height:auto"/>
+
 - El cuarto ejercicio nos pido obtener el código de una sesión de google meet que se intoduzca en un formulario. Para empezar nos aseguramos de que la url que se envia en el formulario es de google meet, esto lo hacemos mediante el objeto RegExp(). Una vez que se haya verificado que la url es de google meet, le quitamos la parte que no contenga el código y la almacenamos en una variable. Para finalizar, reemplazamos los guiones del código obtenido por un string vacio, de modo que nos quede el código sin guiones.
+
+<img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2ej4.PNG?raw=true" alt="ej1" style="width:1000%; height:auto"/><img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2im4.PNG?raw=true" alt="ej1" style="width:30%; height:auto"/>
+
 - En el quinto ejercicio se pide ingresar un número que sea el número de elementos para luego crear una tabla por javascript y calcular la suma de sus elementos. En primer lugar, obtenemos el número de elementos atraves de un formulario. Luego, en una primera función creamos la tabla usando la función createElement() y lo vamos rellenando con un ciclo for y añadiendo el elemento creado con el método appendChild(). Después, en otra función mostraremos la suma de los elemento de la tabla, creando otra tabla y recorriendola con dos ciclos for una vez se haga click en un botón que se agregó en el archivo html.
+
+<img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2ej5.PNG?raw=true" alt="ej1" style="width:70%; height:auto"/><img src="https://github.com/LuisArocutipa/pwebLab02/blob/master/imagenes/Lab2im5.PNG?raw=true" alt="ej1" style="width:40%; height:auto"/>
 
 #
